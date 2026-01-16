@@ -1,0 +1,220 @@
+2026/01/16 22:55:05 logtail started
+2026/01/16 22:55:05 Program starting: v1.80.2-t62b8bf6a0-g3c35ee987, Go 1.23.5: []string{"./tailscaled"}
+2026/01/16 22:55:05 LogID: c40b6baa3c3181d33389caf1c70b427351d708fad443fb024eff7acb2a0cc94b
+2026/01/16 22:55:05 logpolicy: using system state directory "/var/lib/tailscale"
+logpolicy.ConfigFromFile /var/lib/tailscale/tailscaled.log.conf: open /var/lib/tailscale/tailscaled.log.conf: no such file or directory
+logpolicy.Config.Validate for /var/lib/tailscale/tailscaled.log.conf: config is nil
+2026/01/16 22:55:05 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2026/01/16 22:55:05 dns: [rc=resolved resolved=not-in-use ret=direct]
+2026/01/16 22:55:05 dns: using "direct" mode
+2026/01/16 22:55:05 dns: using *dns.directManager
+2026/01/16 22:55:05 dns: inotify addwatch: context canceled
+2026/01/16 22:55:05 wgengine.NewUserspaceEngine(tun "tailscale0") ...
+2026/01/16 22:55:05 dns: resolvedIsActuallyResolver error: resolv.conf doesn't point to systemd-resolved; points to [127.0.0.53 168.63.129.16]
+2026/01/16 22:55:05 dns: [rc=resolved resolved=not-in-use ret=direct]
+2026/01/16 22:55:05 dns: using "direct" mode
+2026/01/16 22:55:05 dns: using *dns.directManager
+2026/01/16 22:55:05 link state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.12.172/16 llu6]} v4=true v6=false}
+2026/01/16 22:55:05 onPortUpdate(port=33822, network=udp6)
+2026/01/16 22:55:05 router: using firewall mode pref 
+2026/01/16 22:55:05 router: default choosing iptables
+2026/01/16 22:55:05 router: netfilter running in iptables mode v6 = true, v6filter = true, v6nat = true
+2026/01/16 22:55:05 onPortUpdate(port=58273, network=udp4)
+2026/01/16 22:55:05 magicsock: disco key = d:ed184137eacefbec
+2026/01/16 22:55:05 Creating WireGuard device...
+2026/01/16 22:55:05 Bringing WireGuard device up...
+2026/01/16 22:55:05 Bringing router up...
+2026/01/16 22:55:05 external route: up
+2026/01/16 22:55:05 Clearing router settings...
+2026/01/16 22:55:05 Starting network monitor...
+2026/01/16 22:55:05 Engine created.
+2026/01/16 22:55:05 monitor: [unexpected] network state changed, but stringification didn't: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.12.172/16 llu6]} v4=true v6=false}
+2026/01/16 22:55:05 monitor: [unexpected] old: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.12.172/16","fe80::7e1e:52ff:fead:e15c/64"],"lo":["127.0.0.1/8","::1/128"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkJAe+en","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"fB5SreFc","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
+2026/01/16 22:55:05 monitor: [unexpected] new: {"InterfaceIPs":{"docker0":["172.17.0.1/16"],"eth0":["10.0.12.172/16","fe80::7e1e:52ff:fead:e15c/64"],"lo":["127.0.0.1/8","::1/128"],"tailscale0":["fe80::73ce:6d41:35e8:9009/64"]},"Interface":{"docker0":{"Index":3,"MTU":1500,"Name":"docker0","HardwareAddr":"AkJAe+en","Flags":19,"AltAddrs":null,"Desc":""},"eth0":{"Index":2,"MTU":1500,"Name":"eth0","HardwareAddr":"fB5SreFc","Flags":51,"AltAddrs":null,"Desc":""},"lo":{"Index":1,"MTU":65536,"Name":"lo","HardwareAddr":null,"Flags":37,"AltAddrs":null,"Desc":""},"tailscale0":{"Index":4,"MTU":1280,"Name":"tailscale0","HardwareAddr":null,"Flags":57,"AltAddrs":null,"Desc":""}},"HaveV6":false,"HaveV4":true,"IsExpensive":false,"DefaultRouteInterface":"eth0","HTTPProxy":"","PAC":""}
+2026/01/16 22:55:05 LinkChange: major, rebinding. New state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.12.172/16 llu6]} v4=true v6=false}
+2026/01/16 22:55:05 onPortUpdate(port=33822, network=udp6)
+2026/01/16 22:55:05 onPortUpdate(port=58273, network=udp4)
+2026/01/16 22:55:05 Rebind; defIf="eth0", ips=[10.0.12.172/16 fe80::7e1e:52ff:fead:e15c/64]
+2026/01/16 22:55:05 pm: migrating "_daemon" profile to new format
+2026/01/16 22:55:05 magicsock: 0 active derp conns
+2026/01/16 22:55:05 logpolicy: using system state directory "/var/lib/tailscale"
+2026/01/16 22:55:05 monitor: gateway and self IP changed: gw=10.0.0.1 self=10.0.12.172
+2026/01/16 22:55:05 got LocalBackend in 31ms
+2026/01/16 22:55:05 Start
+2026/01/16 22:55:05 Backend: logs: be:c40b6baa3c3181d33389caf1c70b427351d708fad443fb024eff7acb2a0cc94b fe:
+2026/01/16 22:55:05 Switching ipn state NoState -> NeedsLogin (WantRunning=false, nm=false)
+2026/01/16 22:55:05 blockEngineUpdates(true)
+2026/01/16 22:55:05 health(warnable=wantrunning-false): error: Tailscale is stopped.
+2026/01/16 22:55:05 wgengine: Reconfig: configuring userspace WireGuard config (with 0/0 peers)
+2026/01/16 22:55:05 wgengine: Reconfig: configuring router
+2026/01/16 22:55:05 wgengine: Reconfig: configuring DNS
+2026/01/16 22:55:05 dns: Set: {DefaultResolvers:[] Routes:{} SearchDomains:[] Hosts:0}
+2026/01/16 22:55:05 dns: Resolvercfg: {Routes:{} Hosts:0 LocalDomains:[], cloud="azure"}
+2026/01/16 22:55:05 dns: OScfg: {}
+2026/01/16 22:55:06 Start
+2026/01/16 22:55:06 generating new machine key
+2026/01/16 22:55:06 machine key written to store
+2026/01/16 22:55:06 Backend: logs: be:c40b6baa3c3181d33389caf1c70b427351d708fad443fb024eff7acb2a0cc94b fe:
+2026/01/16 22:55:06 Switching ipn state NoState -> NeedsLogin (WantRunning=true, nm=false)
+2026/01/16 22:55:06 health(warnable=wantrunning-false): ok
+2026/01/16 22:55:06 health(warnable=warming-up): error: Tailscale is starting. Please wait.
+2026/01/16 22:55:06 blockEngineUpdates(true)
+2026/01/16 22:55:06 control: client.Shutdown ...
+2026/01/16 22:55:06 control: mapRoutine: exiting
+2026/01/16 22:55:06 control: authRoutine: exiting
+2026/01/16 22:55:06 control: updateRoutine: exiting
+2026/01/16 22:55:06 control: Client.Shutdown done.
+2026/01/16 22:55:06 StartLoginInteractiveAs("root"): url=false
+2026/01/16 22:55:06 control: client.Login(2)
+2026/01/16 22:55:06 control: LoginInteractive -> regen=true
+2026/01/16 22:55:06 control: doLogin(regen=true, hasUrl=false)
+2026/01/16 22:55:06 control: control server key from https://controlplane.tailscale.com: ts2021=[fSeS+], legacy=[nlFWp]
+2026/01/16 22:55:06 control: Generating a new nodekey.
+2026/01/16 22:55:06 control: RegisterReq: onode= node=[CgF3Q] fup=false nks=false
+2026/01/16 22:55:11 control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=false; authURL=true
+2026/01/16 22:55:11 control: AuthURL is https://login.tailscale.com/a/75dbd18011521
+2026/01/16 22:55:11 control: doLogin(regen=false, hasUrl=true)
+2026/01/16 22:55:11 control: RegisterReq: onode= node=[CgF3Q] fup=true nks=false
+2026/01/16 22:55:11 Received auth URL: https://login.tailsc...
+2026/01/16 22:55:11 popBrowserAuthNow("root"): url=true, key-expired=false, seamless-key-renewal=false
+2026/01/16 22:55:11 blockEngineUpdates(true)
+2026/01/16 22:55:11 stopEngineAndWait...
+2026/01/16 22:55:11 requestEngineStatusAndWait
+2026/01/16 22:55:11 requestEngineStatusAndWait: waiting...
+2026/01/16 22:55:11 requestEngineStatusAndWait: got status update.
+2026/01/16 22:55:11 stopEngineAndWait: done.
+2026/01/16 22:55:11 health(warnable=warming-up): ok
+2026/01/16 22:55:30 control: RegisterReq: got response; nodeKeyExpired=false, machineAuthorized=true; authURL=false
+2026/01/16 22:55:30 blockEngineUpdates(false)
+2026/01/16 22:55:30 control: lite map update error after 95ms: initial fetch failed 409: superseded by another update
+2026/01/16 22:55:30 control: netmap: got new dial plan from control
+2026/01/16 22:55:30 health(warnable=not-in-map-poll): ok
+2026/01/16 22:55:30 active login: cavismewing@gmail.com
+2026/01/16 22:55:30 Switching ipn state NeedsLogin -> Starting (WantRunning=true, nm=true)
+2026/01/16 22:55:30 magicsock: SetPrivateKey called (init)
+2026/01/16 22:55:30 wgengine: Reconfig: configuring userspace WireGuard config (with 0/0 peers)
+2026/01/16 22:55:30 wgengine: Reconfig: configuring router
+2026/01/16 22:55:30 wgengine: Reconfig: configuring DNS
+2026/01/16 22:55:30 dns: Set: {DefaultResolvers:[] Routes:{tail5e56ea.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail5e56ea.ts.net.] Hosts:1}
+2026/01/16 22:55:30 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:1 LocalDomains:[tail5e56ea.ts.net.]+65arpa, cloud="azure"}
+2026/01/16 22:55:30 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[tail5e56ea.ts.net. as3oyaxyermercpknrxo0v1cld.cx.internal.cloudapp.net.] }
+2026/01/16 22:55:30 rename of "/etc/resolv.conf" to "/etc/resolv.pre-tailscale-backup.conf" failed (rename /etc/resolv.conf /etc/resolv.pre-tailscale-backup.conf: device or resource busy), falling back to copy+delete
+2026/01/16 22:55:30 restarted resolved after 1ms
+2026/01/16 22:55:30 peerapi: serving on http://100.107.198.38:35046
+2026/01/16 22:55:30 peerapi: serving on http://[fd7a:115c:a1e0::af01:c627]:63110
+2026/01/16 22:55:30 magicsock: home DERP changing from derp-0 [0ms] to derp-27 [5ms]
+2026/01/16 22:55:30 magicsock: home is now derp-27 (iad)
+2026/01/16 22:55:30 health(warnable=no-derp-home): ok
+2026/01/16 22:55:30 magicsock: adding connection to derp-27 for home-keep-alive
+2026/01/16 22:55:30 magicsock: 1 active derp conns: derp-27=cr0s,wr0s
+2026/01/16 22:55:30 derphttp.Client.Connect: connecting to derp-27 (iad)
+2026/01/16 22:55:30 control: NetInfo: NetInfo{varies=false hairpin= ipv6=false ipv6os=true udp=true icmpv4=false derp=#27 portmap= link="" firewallmode="ipt-default"}
+2026/01/16 22:55:30 Switching ipn state Starting -> Running (WantRunning=true, nm=true)
+2026/01/16 22:55:30 magicsock: endpoints changed: 135.237.130.232:42050 (stun), 10.0.12.172:58273 (local), 172.17.0.1:58273 (local)
+2026/01/16 22:55:30 magicsock: derp-27 connected; connGen=1
+2026/01/16 22:55:30 health(warnable=no-derp-connection): ok
+2026/01/16 23:00:25 wgengine: Reconfig: configuring router
+2026/01/16 23:00:25 wgengine: Reconfig: configuring DNS
+2026/01/16 23:00:25 dns: Set: {DefaultResolvers:[] Routes:{tail5e56ea.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail5e56ea.ts.net.] Hosts:2}
+2026/01/16 23:00:25 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:2 LocalDomains:[tail5e56ea.ts.net.]+65arpa, cloud="azure"}
+2026/01/16 23:00:25 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[tail5e56ea.ts.net. as3oyaxyermercpknrxo0v1cld.cx.internal.cloudapp.net.] }
+2026/01/16 23:00:25 restarted resolved after 1ms
+2026/01/16 23:00:25 wgengine: Reconfig: configuring userspace WireGuard config (with 0/1 peers)
+2026/01/16 23:00:25 wgengine: Reconfig: configuring router
+2026/01/16 23:00:25 wgengine: Reconfig: configuring DNS
+2026/01/16 23:00:25 dns: Set: {DefaultResolvers:[] Routes:{tail5e56ea.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail5e56ea.ts.net.] Hosts:2}
+2026/01/16 23:00:25 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:2 LocalDomains:[tail5e56ea.ts.net.]+65arpa, cloud="azure"}
+2026/01/16 23:00:25 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[tail5e56ea.ts.net. as3oyaxyermercpknrxo0v1cld.cx.internal.cloudapp.net.] }
+2026/01/16 23:00:25 restarted resolved after 1ms
+2026/01/16 23:00:26 magicsock: endpoints changed: 135.237.130.232:42048 (stun), 135.237.130.232:42050 (stun), 10.0.12.172:58273 (local), 172.17.0.1:58273 (local)
+2026/01/16 23:00:29 wgengine: idle peer [vTGej] now active, reconfiguring WireGuard
+2026/01/16 23:00:29 wgengine: Reconfig: configuring userspace WireGuard config (with 1/1 peers)
+2026/01/16 23:00:29 wg: [vTGej] - Failed to send handshake response: no UDP or DERP addr
+2026/01/16 23:00:37 magicsock: disco: node [vTGej] d:ccc0222f5c048fe7 now using 187.19.187.239:46155 mtu=1360 tx=7fc277359d2f
+2026/01/16 23:00:46 magicsock: endpoints changed: 135.237.130.232:42048 (stun), 10.0.12.172:58273 (local), 172.17.0.1:58273 (local)
+2026/01/16 23:03:07 wgengine: Reconfig: configuring userspace WireGuard config (with 0/0 peers)
+2026/01/16 23:03:07 wgengine: Reconfig: configuring router
+2026/01/16 23:03:07 wgengine: Reconfig: configuring DNS
+2026/01/16 23:03:07 dns: Set: {DefaultResolvers:[] Routes:{tail5e56ea.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail5e56ea.ts.net.] Hosts:1}
+2026/01/16 23:03:07 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:1 LocalDomains:[tail5e56ea.ts.net.]+65arpa, cloud="azure"}
+2026/01/16 23:03:07 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[tail5e56ea.ts.net. as3oyaxyermercpknrxo0v1cld.cx.internal.cloudapp.net.] }
+2026/01/16 23:03:07 LinkChange: major, rebinding. New state: interfaces.State{defaultRoute=eth0 ifs={docker0:[172.17.0.1/16] eth0:[10.0.12.172/16 llu6] tailscale0:[100.107.198.38/32 fd7a:115c:a1e0::af01:c627/128 llu6]} v4=true v6=false}
+2026/01/16 23:03:07 restarted resolved after 1ms
+2026/01/16 23:03:07 dns: Set: {DefaultResolvers:[] Routes:{tail5e56ea.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail5e56ea.ts.net.] Hosts:1}
+2026/01/16 23:03:07 dns: Resolvercfg: {Routes:{.:[127.0.0.53 168.63.129.16] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:1 LocalDomains:[tail5e56ea.ts.net.]+65arpa, cloud="azure"}
+2026/01/16 23:03:07 dns: OScfg: {Nameservers:[100.100.100.100] SearchDomains:[tail5e56ea.ts.net. as3oyaxyermercpknrxo0v1cld.cx.internal.cloudapp.net.] }
+2026/01/16 23:03:07 restarted resolved after 1ms
+2026/01/16 23:03:07 wgengine: set DNS config again after major link change
+2026/01/16 23:03:07 onPortUpdate(port=33822, network=udp6)
+2026/01/16 23:03:07 onPortUpdate(port=58273, network=udp4)
+2026/01/16 23:03:07 Rebind; defIf="eth0", ips=[10.0.12.172/16 fe80::7e1e:52ff:fead:e15c/64]
+2026/01/16 23:03:07 magicsock: 1 active derp conns: derp-27=cr8m0s,wr56s
+2026/01/16 23:03:07 post-rebind ping of DERP region 27 okay
+2026/01/16 23:03:07 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:03:35 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:03:39 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:03:42 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:03:44 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:03:45 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:03:48 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:03:49 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:03:51 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:03:54 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:03:54 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:03:57 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:00 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:00 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:03 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:05 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:06 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:09 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:10 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:12 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:12 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers")
+2026/01/16 23:04:16 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:18 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers") (1 dropped)
+2026/01/16 23:04:18 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:21 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:21 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:21 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers")
+2026/01/16 23:04:26 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:30 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers") (2 dropped)
+2026/01/16 23:04:30 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:31 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:33 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:36 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:36 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:36 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers")
+2026/01/16 23:04:41 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:45 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers") (2 dropped)
+2026/01/16 23:04:45 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:46 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:48 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:51 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:04:51 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers")
+2026/01/16 23:04:51 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:04:57 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:05:00 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers") (2 dropped)
+2026/01/16 23:05:00 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:05:02 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:05:03 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:05:06 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:05:06 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers")
+2026/01/16 23:05:07 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:05:12 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:05:15 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers") (2 dropped)
+2026/01/16 23:05:15 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:05:17 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:05:18 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:05:21 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:05:21 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers")
+2026/01/16 23:05:22 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:05:28 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:05:30 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers") (2 dropped)
+2026/01/16 23:05:30 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:05:33 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:05:33 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:05:36 [unexpected] got disco ping from 187.19.187.239:46155/nodekey:0000000000000000000000000000000000000000000000000000000000000000 for node not in peers
+2026/01/16 23:05:36 [RATELIMIT] format("[unexpected] got disco ping from %v/%v for node not in peers")
+2026/01/16 23:05:38 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
+2026/01/16 23:05:43 magicsock: disco: ignoring CallMeMaybe from d:ccc0222f5c048fe7; [vTGej] is unknown
